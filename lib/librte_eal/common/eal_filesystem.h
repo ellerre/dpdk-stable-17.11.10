@@ -56,7 +56,7 @@ static const char *default_config_dir = "/var/run";
 static inline const char *
 eal_runtime_config_path(void)
 {
-	static char *buffer = "/var/run/.rte_config";
+	static const char *buffer = "/var/run/.rte_config";
 	// static char buffer[PATH_MAX]; /* static so auto-zeroed */
 	// const char *directory = default_config_dir;
 	// const char *home_dir = getenv("HOME");
